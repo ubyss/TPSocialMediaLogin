@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TPSocialMedia", "TPSocialMedia\TPSocialMedia.csproj", "{3E6D54F5-77C3-4921-AC7F-AC1500CE24FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCClient", "MVCClient\MVCClient.csproj", "{5951A9E1-7A89-4ED3-8C07-DE2B509DDF4B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E6D54F5-77C3-4921-AC7F-AC1500CE24FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E6D54F5-77C3-4921-AC7F-AC1500CE24FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E6D54F5-77C3-4921-AC7F-AC1500CE24FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E6D54F5-77C3-4921-AC7F-AC1500CE24FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5951A9E1-7A89-4ED3-8C07-DE2B509DDF4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5951A9E1-7A89-4ED3-8C07-DE2B509DDF4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5951A9E1-7A89-4ED3-8C07-DE2B509DDF4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5951A9E1-7A89-4ED3-8C07-DE2B509DDF4B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {094706D0-4118-410A-B9F3-9505E6292958}
+	EndGlobalSection
+EndGlobal

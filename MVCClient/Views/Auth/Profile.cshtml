@@ -1,0 +1,22 @@
+﻿@model ObjectUser.IdentityUserData;
+
+<h1>Bem vindo a seu perfil</h1>
+
+@using (Html.BeginForm("ProcessUpdate", "Auth", FormMethod.Post))
+{
+    <div class="form-group">
+        <label for="userName">Seu nome</label>
+        @Html.TextBoxFor(m => m.userName, new { @class = "form-control", placeholder="Username", value=Model.userName})
+    </div>
+    <div class="form-group mt-3">
+        <label for="email">Email</label>
+        @Html.TextBoxFor(m => m.email, new { @class = "form-control", placeholder="xxx@xxx.com", value=Model.email})
+    </div>
+    <div class="form-group mt-3">
+        <label for="phoneNumber">Número de telefone</label>
+        @Html.TextBoxFor(m => m.phoneNumber, new { @class = "form-control", placeholder="+(55) 9 9999-9999", value=Model.phoneNumber})
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-3">Atualizar dados</button>
+}
+</div>
