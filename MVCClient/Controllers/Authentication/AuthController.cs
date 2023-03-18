@@ -34,6 +34,8 @@ namespace MVCClient.Controllers.Authentication
         {
             string userSession = HttpContext.Session.GetString("UserToken");
 
+            if(userSession == null) return RedirectToAction("Index", "Auth");
+
             using (var httpClient = new HttpClient())
             {
                 
