@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace TPSocialMedia.Models
 {
@@ -13,5 +12,7 @@ namespace TPSocialMedia.Models
 
         [Required]
         public string Email { get; set; }
+
+        public string? Phone { get; set; }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using TPSocialMedia.Models;
 
 namespace TPSocialMedia.Data
 {
@@ -10,5 +11,7 @@ namespace TPSocialMedia.Data
         {
 
         }
+
+        public DbSet<UserImage> UserImages { get; set; }
     }
 }

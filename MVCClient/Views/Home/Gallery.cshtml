@@ -1,0 +1,15 @@
+﻿@model List<UserImageView>
+
+<h1>Conheça novos pets</h1>
+
+
+<div class="mt-5">
+    @foreach (var image in Model)
+    {
+
+        <a href="@Url.Action("userProfile", "Auth", new { id = image.UserId })">
+        <img src="@image.ImageUrl" alt="Image" style="width: 200px; height: 200px; border-radius: 100px; object-fit: cover;" />
+    </a>
+    }
+</div>
+

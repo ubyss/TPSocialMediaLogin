@@ -137,7 +137,7 @@ namespace TPSocialMedia.Controllers
             return Ok(identityUser);
         }
 
-        [HttpPost("User/{id}")]
+        [HttpPut("User/{id}")]
         public async Task<IActionResult> UpdateUser(string id, UserProfile userprofile)
         {
             var identityUser = await userManager.FindByIdAsync(id);
@@ -149,6 +149,29 @@ namespace TPSocialMedia.Controllers
             await userManager.UpdateAsync(identityUser);
 
             return Ok(identityUser);
+        }
+
+        [HttpGet("getUserById/{id}")]
+        public async Task<IActionResult> GetUserById(string id)
+        {
+            // Busque o usuário pelo ID usando o seu serviço ou repositório
+            var user = await userManager.FindByIdAsync(id);
+
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            // Omita as propriedades confidenciais, como senha e tokens, antes de retornar o objeto do usuário
+            var userResult = new
+            {
+                Id = user.Id,
+                UserName = user.UserName,
+                Email = user.Email,
+                PhoneNumber = user.PhoneNumber
+            };
+
+            return Ok(userResult);
         }
     }
 
