@@ -62,9 +62,15 @@ namespace MVCClient.Controllers.Authentication
 
                 var responseContentImage = await responseImage.Content.ReadAsStringAsync();
 
+                if (responseContentImage == "Nenhuma imagem foi encontrada")
+                {
+                    ViewBag.imageLink = null;
+                } else
+                {
+                    ViewBag.imageLink = responseContentImage;
+                }
 
                 ViewBag.isVisitor = false;
-                ViewBag.imageLink = responseContentImage;
 
                 return View("Profile", UserDetails);
             }

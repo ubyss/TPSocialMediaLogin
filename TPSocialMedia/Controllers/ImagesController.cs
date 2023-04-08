@@ -15,7 +15,7 @@ namespace TPSocialMedia.Controllers
         private readonly ApplicationDbContext _db;
         public ImagesController(ApplicationDbContext db)
         {
-            _connectionString = "DefaultEndpointsProtocol=https;AccountName=atpbthiagovinicius;AccountKey=qtbPQbY7n4oF4Io3ln93jKcX9qAzmXoSOikTYs543O0m4htUfjnweLEFiSUlOLQXDGcYldzYkeNT+ASt4V462w==;EndpointSuffix=core.windows.net";
+            _connectionString = "DefaultEndpointsProtocol=https;AccountName=projetodobloco;AccountKey=wUXTWRQnwpDR5l/ogk2MpQ5+wU4u4G2VWce2jpXFsHAY0bvyvIksX/u/GFFJeDMMpH3jUM9c5tM/+AStAd5qvg==;EndpointSuffix=core.windows.net";
             _db = db;
         }
 
@@ -27,7 +27,7 @@ namespace TPSocialMedia.Controllers
                 using (var stream = file.OpenReadStream())
                 {
                     BlobServiceClient blobServiceClient = new BlobServiceClient(_connectionString);
-                    BlobContainerClient containerClient = blobServiceClient.GetBlobContainerClient("blobatpbthiagovinicius");
+                    BlobContainerClient containerClient = blobServiceClient.GetBlobContainerClient("projetodebloco");
 
                     string fileName = Path.GetFileName(file.FileName);
                     BlobClient blobClient = containerClient.GetBlobClient(fileName);

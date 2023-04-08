@@ -11,14 +11,16 @@
 @using (Html.BeginForm("ProcessUpdate", "Auth", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
     <div class="form-group mt-3 mx-auto" style="display: flex; justify-content: center">
-        <input type="file" id="file" name="file" accept="image/*" style="display:none;" disabled>
+        
         <br>
 @if (ViewBag.imageLink != null)
 {
+    <input type="file" id="file" name="file" accept="image/*" style="display:none;" disabled>
     <img id="preview" style="object-fit: cover; cursor: pointer; border: 1px solid #ccc; border-radius: 500px; width: 250px; height: 250px;" src=@ViewBag.imageLink>
 }
 else
 {
+    <input type="file" id="file" name="file" accept="image/*" style="display:none;">
     <img id="preview" style="object-fit: cover; cursor: pointer; border: 1px solid #ccc; border-radius: 500px; width: 250px; height: 250px;" src="https://st4.depositphotos.com/18664664/21428/v/600/depositphotos_214280098-stock-illustration-image-vector-icon-isolated-on.jpg">
 }
     </div>
