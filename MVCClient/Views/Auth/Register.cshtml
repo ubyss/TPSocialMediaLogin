@@ -7,7 +7,7 @@
 {
     <div class="form-group">
         <label for="username">Seu nome</label>
-        @Html.TextBoxFor(m => m.username, new { @class = "form-control", placeholder="Username"})
+        @Html.TextBoxFor(m => m.username, new { @class = "form-control", placeholder="Usuario"})
     </div>
     <div class="form-group mt-3">
         <label for="password">E-mail</label>
@@ -15,7 +15,7 @@
     </div>
     <div class="form-group mt-3">
         <label for="password">Senha</label>
-        @Html.PasswordFor(m => m.password, new { @class = "form-control", placeholder="password"})
+        @Html.PasswordFor(m => m.password, new { @class = "form-control", placeholder="Senha"})
     </div>
 
     <button type="submit" class="btn btn-primary mt-3">Registrar</button>
