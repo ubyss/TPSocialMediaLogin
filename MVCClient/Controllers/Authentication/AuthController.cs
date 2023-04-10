@@ -132,6 +132,7 @@ namespace MVCClient.Controllers.Authentication
                 var response = await httpClient.PostAsync("https://localhost:5001/api/Auth/Register", content);
 
                 var responseContent = await response.Content.ReadAsStringAsync();
+              
 
                 JsonData meuObjeto = JsonConvert.DeserializeObject<JsonData>(responseContent);
 
