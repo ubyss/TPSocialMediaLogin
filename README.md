@@ -1,12 +1,12 @@
 ## **Índice**
 
-1. **[Introdução](https://chat.openai.com/chat/47d2b265-2a33-4545-99a8-d20a040a8b3a#introdu%C3%A7%C3%A3o)**
-2. **[Requisitos](https://chat.openai.com/chat/47d2b265-2a33-4545-99a8-d20a040a8b3a#requisitos)**
-3. **[Funcionalidades](https://chat.openai.com/chat/47d2b265-2a33-4545-99a8-d20a040a8b3a#funcionalidades)**
-4. **[Arquitetura do Sistema](https://chat.openai.com/chat/47d2b265-2a33-4545-99a8-d20a040a8b3a#arquitetura)**
-5. **[API](https://chat.openai.com/chat/47d2b265-2a33-4545-99a8-d20a040a8b3a#api)**
-6. **[Telas](https://chat.openai.com/chat/47d2b265-2a33-4545-99a8-d20a040a8b3a#telas)**
-7. **[Conclusão](https://chat.openai.com/chat/47d2b265-2a33-4545-99a8-d20a040a8b3a#conclus%C3%A3o)**
+1. [Introdução]
+2. [Requisitos]
+3. [Funcionalidades]
+4. [Arquitetura do Sistema]
+5. [API]
+6. [Telas]
+7. [Conclusão]
 
 ## **1. Introdução**
 
@@ -51,7 +51,7 @@ Essa página é para o cadastro de um novo usuário. Os campos disponíveis são
 - Email
 - Senha
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e9baed35-de2d-4e6f-a264-7127dcc9cfde/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e9baed35-de2d-4e6f-a264-7127dcc9cfde/Untitled.png)
+![image](https://user-images.githubusercontent.com/80261904/230902573-a47e68f8-c9e6-4c33-a644-1e813b6541ea.png)
 
 ### **Login**
 
@@ -60,19 +60,21 @@ Essa página é para a autenticação do usuário já cadastrado. Os campos disp
 - Email
 - Senha
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c9ef24b8-867c-4438-b633-aad9d856db07/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c9ef24b8-867c-4438-b633-aad9d856db07/Untitled.png)
+![image](https://user-images.githubusercontent.com/80261904/230902596-19e2219b-8ab7-4ccc-9fa4-3e6d56ca1f68.png)
 
 ### **Galeria**
 
 Essa área mostra todos os usuários cadastrados e seus pets. Os usuários podem visualizar os pets dos outros usuários e acessar seus perfis.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7aeeb3d3-f0c8-4159-9807-f839f691f0f0/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7aeeb3d3-f0c8-4159-9807-f839f691f0f0/Untitled.png)
+![image](https://user-images.githubusercontent.com/80261904/230902715-98f6bdd7-75d9-43d9-8524-bbaba201cb40.png)
+
 
 ### **Perfil**
 
 Página do perfil do usuário, onde mostra seu nome, a imagem e seus dados cadastrados. Também é possível alterar e atualizar os dados que foram cadastrados.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9c46369f-fe47-42fb-89a4-50cb5802ae57/Untitled.png)
+![image](https://user-images.githubusercontent.com/80261904/230902859-7f86ed56-2f98-4a22-b3fc-65e215f8cd40.png)
+
 
 ## **7. Conclusão**
 
